@@ -1,6 +1,12 @@
 # videos-image-summary
 Lightweight script to extract thumbnails (frames) from multiple videos at a specified time (timestamp) and join them into one overview image.
 
+#### for example:
+  ```
+   python videos_to_image_summary.py -v './videos' -i './snapshots' --title 'Test'
+```
+
+ ![GitHub Logo](/output_compressed.jpeg)
 ### requirements (standard under Ubuntu and Python 3)
 * System: ffmpeg, montage
 * Python: subprocess, shutil, argparse, glob, os
@@ -24,8 +30,4 @@ optional arguments:
                         take from the videos in hh:mm:ss:ms e.g. 00:01:00.000
   --title TITLE         specify outputfile name and header
  ```
- for example:
-  ```
-   python videos_to_image_summary.py -v './videos' -i './snapshots' --title 'Test'
-```
- ![GitHub Logo](/output_compressed.jpeg)
+
